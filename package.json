@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "babel src/index.jsx --out-file dist/bundle.js"
+  },
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
