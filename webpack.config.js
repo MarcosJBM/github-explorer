@@ -13,7 +13,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx', 'ts', 'tsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   devServer: {
     static: path.resolve(__dirname, 'public'),
@@ -28,7 +28,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\. (j|t)sx$/,
+        test: /\.(j|t)sx$/,
         exclude: /node_modules/,
         use: [
           {
